@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width-device-width, initia-scale=1.0">
+    <link href="estilos.css" rel="stylesheet" type="text/css">
+    <title> Primer Parcial </title>
+  </head>
+  <body>
+    <header class="estilo_bloque">
+      <img class="img-circulo" src="img/foto_perfil.jpg">
+      <p>Fernando Caxaj </p>
+      
+      <nav>
+	<p>
+	<a href="Inicio.html"> Inicio </a>
+	<a href="php.html"> Inicio </a>	
+	<a href="Net.html"> Inicio </a>
+	<a href="Java.html"> Inicio </a>
+	</p>
+      </nav>
+    </header>
+
+    <div class="estilo_bloque">
+      <h2>Lenguajes de Programacion</h2>
+      <ol>
+	<li>Paginas Web </li>
+	  <ul class="vi2">
+	    <li>Jsp</li>
+	    <li>Asp</li>
+	    <li>PhP</li>
+	  </ul>
+
+	<li>Aplicaciones</li>
+	  <ul class="vi1">
+	    <li>Java</li>
+	    <li>Visual Basic</li>
+	    <li>C#</li>
+	  </ul>
+      </ol>
+    </div>
+
+    <div class="estilo_bloque">
+      <table>
+	<tr>
+	  <td colspan="2">Programacion Web</td>
+	</tr>
+	
+	<tr>
+	  <td >Asp</td>
+	  <td >Jsp</td>
+	</tr>
+
+	<tr>
+	  <td >Php</td>
+	  <td >Ruby</td>
+	</tr>
+
+	<tr>
+	  <td >Python</td>
+	  <td >Go</td>
+	</tr>
+      </table>
+    </div>
+    
+    <div class="estilo_bloque">
+      <form> 
+	<input id="nombre" type="text" name="nombre" placeholder="Ingrese el nombre" required>
+	<input id="Apellidos" type="text" name="Apellidos" placeholder="Ingrese Apellidos" required>
+	<input id="telefono" type="number" name="telefono" placeholder="Ingrese el telefono" required>
+	<input id="email" type="email" name="email" placeholder="Ingrese el correo electronico" required>
+	<input id="fecha" type="date" name="fecha" placeholder="Ingrese la fecha" required>
+	<textarea id="direccion" type="text" name="direccion" placeholder="direccion" ></textarea>
+	
+	<input id="boton" type="submit" name="boton" class="boton" onclick="Alerta()">
+	<script type="text/javascript">
+	  function Alerta(){
+	    var nombre= document.getElementById("nombre");
+	    var apellido= document.getElementById("Apellidos");
+	    var telefono= document.getElementById("telefono");
+	    var email= document.getElementById("email");
+	    var fecha= document.getElementById("fecha");
+	    var direccion= document.getElementById("direccion");
+	    var mensaje = nombre.value+'\n'+apellido.value+'\n'+telefono.value+'\n'+email.value+'\n'+fecha.value+'\n'+direccion.value;
+
+	    alert(mensaje)
+
+	  }
+	</script>
+      </form>
+
+    </div>
+    <div class="estilo_bloque redes_sociales">
+      <h3> Redes Sociales</h3>
+      <a href="#" class="redes_sociales_a"><img  class="redes_sociales_img" src="img/facebook.png"></a>
+      <a href="#" class="redes_sociales_a"><img  class="redes_sociales_img" src="img/twitter.png"></a>
+    </div>
+    <footer>
+      <p align="center"> Aprende a Programar Facil y rapido &copy:</p>
+    </footer>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
